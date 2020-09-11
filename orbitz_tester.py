@@ -9,14 +9,6 @@ import time
 
 browser = None
 base_link = 'https://www.orbitz.com/'
-PAUSE_TIME = 0.5
-
-def check_element(browser, element):
-    try:
-        browser.find_element_by_xpath(element)
-    except NoSuchElementException:
-        return False
-    return True
 
 def initialise():
     global browser
